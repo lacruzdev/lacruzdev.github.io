@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar with Checkboxes</title>
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 20px;
+            width: 0%;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .checkbox-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .checkbox-list li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTFul API with .NET Core 3.1</h1>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+    
+    <ul class="checkbox-list">
+        <li><label><input type="checkbox" class="task-checkbox"> Part 1</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 2</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 3</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 4</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 5</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 6</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 7</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 8</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 9</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 10</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 11</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 12</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 13</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 14</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 15</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 16</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 17</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 18</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 19</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 20</label></li>
+        <li><label><input type="checkbox" class="task-checkbox"> Part 21</label></li>
+    </ul>
+
+
+
+    <script>
+        const checkboxes = document.querySelectorAll('.task-checkbox');
+        const progressBar = document.getElementById('progressBar');
+        const totalTasks = checkboxes.length;
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+
+        function updateProgress() {
+            const completedTasks = document.querySelectorAll('.task-checkbox:checked').length;
+            const progress = Math.round((completedTasks / totalTasks) * 100);
+
+            progressBar.style.width = progress + '%';
+            progressBar.textContent = progress + '%';
+        }
+    </script>
+</body>
+</html>
