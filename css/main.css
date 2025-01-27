@@ -1,0 +1,47 @@
+body, html {
+    color: rgba(0, 0, 0, .75);
+    font-size: 16px;
+    font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+    font-variant-ligatures: common-ligatures;
+    line-height: 1.67;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    tab-size: 4;
+    text-rendering: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.8em 0;
+    line-height: 1.33;
+}
+
+blockquote, dl, ol, p, pre, ul {
+    margin: 1.2em 0;
+}
+
+code, pre, samp {
+    font-family: Roboto Mono, Lucida Sans Typewriter, Lucida Console, monaco, Courrier, monospace;
+    font-size: .85em;
+}
+
+pre>code {
+    background-color: rgba(0, 0, 0, .05);
+    display: block;
+    padding: .5em;
+    -webkit-text-size-adjust: none;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.container{
+    margin: 0 15px;
+
+}
