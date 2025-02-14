@@ -3,13 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Renderer</title>
-    <link href=/css/main.css rel=stylesheet>
+    <title>Enrique La Cruz - Dev</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="content" class="container"></div>
+    <header>
+        <div class="container">
+            <h1>Enrique La Cruz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="./js/main.js"></script>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Discover my projects and get in touch.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About</h2>
+            <p>
+                Hello! I'm La Cruz Dev, a passionate software developer with a keen interest in programming and digital marketing. With a strong foundation in web development and a 
+                knack for creating innovative solutions, I enjoy working on projects that challenge my skills and push the boundaries of technology. Whether it's developing dynamic websites, 
+                building robust applications, or leveraging digital marketing strategies, I am dedicated to delivering excellence in every project I undertake. Let's connect and explore the endless 
+                possibilities of technology together!
+            </p>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Comming soon...</h3>
+                    <p>Under Construction</p>
+                </div>
+                <div class="project-item">
+                    <h3>Comming soon...</h3>
+                    <p>Under Construction</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <a href="mailto:enrique@lacruz.dev">enrique@lacruz.dev</a>
+            <!-- <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form> -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Enrique La Cruz. All rights reserved.</p>
+            <a href="mailto:enrique@lacruz.dev">Email Enrique</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
